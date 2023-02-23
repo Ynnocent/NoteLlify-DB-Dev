@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
+:root {
+    --color-primary-10: #2a4858;
+    --color-primary-50: #2c5768;
+    --color-primary-100: #2c6778;
+    --color-primary-200: #2c7787;
+    --color-primary-300: #2d8894;
+    --color-primary-400: #3099a0;
+    --color-primary-500: #37aaab;
+    --color-primary-600: #42bbb4;
+    --color-primary-700: #51cdbb;
+    --color-primary-800: #64dec0;
+
+    --color-secondary-500: #fa9600;
+    --color-secondary-600: #e86900;
+    --color-secondary-700: #d23600;
+
+    --color-grey-10: #182525;
+}
+
+body {
+    margin: 0;
+    font-family: 'Cairo', sans-serif;
+    background-color: var(--color-primary-300);
+}
+
+#main-nav-div {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+#nav-logo {
+    padding: .5rem;
+}
+
+#main-nav {
+    background-color: var(--color-primary-10);
+}
+
+#main-nav a.active {
+    background-color: var(--color-secondary-600);
+}
+
+#main-nav ul {
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+#main-nav a{
+    padding: 1em;
+    color: white;
+    text-decoration: none;
+}
+
+button a {
+    text-decoration: none;
+    color: var(--color-grey-10);
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal {
+    position: fixed;
+    top: 25vh;
+    max-width: 30rem;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--color-gray-10);
+}
+
+#footer-div{
+    background-color: var(--color-primary-800);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    }
+
+#footer-div p {
+    color: var(--color-primary-10);
+    padding: 1rem;
+}
+
+#footer-div ul {
+    padding: 1rem;
+    list-style: none;
+}

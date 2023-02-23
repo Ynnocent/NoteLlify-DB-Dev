@@ -1,0 +1,115 @@
+
+
+#homepage-div {
+    text-align: center;
+    padding: 2rem;
+    color: var(--color-grey-10);
+}
+
+#homepage-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#container-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+h3 {
+    grid-column: 2;
+    text-align: center;
+    background-color: var(--color-secondary-700);
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 50rem;
+    min-width: 10rem;
+}
+
+#div-updates {
+    background-color: var(--color-primary-600);
+    text-align: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+#about-link a{
+    text-decoration: none;
+}
+
+#about-link a:hover {
+    color: white;
+}
+
+#title3d {
+    grid-column: 2
+}
+
+
+#about-div {
+    text-align: center;
+    padding: 2rem;
+    color: var(--color-grey-10);
+}
+
+#about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#about-title3d{
+    grid-column: 2
+}
+
+.home-button {
+    background-color: var(--color-secondary-500);
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    padding: 0.5rem 1.75rem;
+    border-radius: 1rem;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    
+}
+
+.auth-div {
+    grid-column: 2;
+    justify-content: space-evenly;
+    background-color: var(--color-primary-100);
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    margin: .5rem;
+}
+
+button {
+    background-color: var(--color-secondary-500);
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    padding: 0.5rem 1.75rem;
+    border-radius: 1rem;
+    margin: .5rem;
+}
+
+input {
+    background-color: aquamarine;
+    border: none;
+    height: 30px;
+    border-radius: .2rem;
+}
+input.active {
+    border: none;
+}
+
+label {
+    font-size: 1.5rem;
+}
+
+

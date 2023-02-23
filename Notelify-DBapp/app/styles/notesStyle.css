@@ -1,0 +1,112 @@
+body {
+    text-align: center;
+}
+
+#note-nav {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color-primary-10);
+    justify-content: space-between;
+}
+    
+
+#note-nav ul {
+    display: flex;
+    list-style: none;
+    padding: 1rem;
+}
+
+#note-nav a.active {
+    background-color: var(--color-secondary-600);
+}
+
+#note-nav a {
+    padding: 1em;
+    color: white;
+    text-decoration: none;
+}
+
+#note-add-form {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    grid-column: 2;
+    padding: 1rem;
+}
+
+#note-add-section {
+    background-color: var(--color-primary-600);
+    width: 20rem;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: 5% 1fr 5%;
+    padding: 1rem;
+    justify-items: center;
+}
+
+input {
+    background-color: var(--color-primary-800);
+    color: var(--color-grey-10);
+    border: none;
+    height: 1.5rem;
+    border-radius: .5rem;
+}
+
+.close-modal {
+    grid-column: 2;
+    width: 10rem;
+}
+
+button {
+    background-color: var(--color-secondary-500);
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    padding: 0.5rem 1.75rem;
+    border-radius: 1rem;
+    margin: 0.5rem;
+}
+
+button a {
+    text-decoration: none;
+}
+
+.note-item {
+    background-color: var(--color-primary-600);
+    border-radius: .5rem;
+    width: 25rem;
+    margin: .5rem;
+    padding: .5rem;
+}
+
+.del-btn {
+    background-color: var(--color-secondary-600);
+}
+
+.edit-btn {
+    background-color: var(--color-primary-400);
+}
+
+
+#notes-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.note-item-action {
+    padding: 0;
+}
+
+#note-item-header {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+
+p.note-item-date{
+    color: white;
+    margin-top: 30px;
+}
