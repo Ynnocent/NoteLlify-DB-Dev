@@ -61,7 +61,7 @@ export async function login({email, password}) {
     const existingUser = await prisma.user.findFirst({where: {email: email}});
 
     if (!existingUser) {
-        const error = new Error("Hmmmm... I can't log you in, maybe check if you have an account.");
+        const error = new Error("Hmmmm... Invalid credentials. Check your email or password");
         error.status = 401;
         throw error;
     }
@@ -69,7 +69,7 @@ export async function login({email, password}) {
     const unhashPassword = await compare(password, existingUser.password);
 
     if (!unhashPassword ) {
-        const error = new Error("Hmmmm... I can't log you in, maybe check if you have an account.");
+        const error = new Error("Hmmmm... Invalid credentials. Check your email or password");
         error.status = 401;
         throw error;
     }

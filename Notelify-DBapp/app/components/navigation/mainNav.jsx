@@ -15,9 +15,9 @@ export default function MainNav() {
                                 <Form method="post" action="/logout" id="logout-form">
                                     <button className="logout-btn">Logout</button>
                                 </Form> }
-                            {!userId && (<NavLink to={"/auth"}>Log In</NavLink>)}
+                            {!userId && (<button className="button-main-nav"><NavLink to={"/auth"}>Log In</NavLink></button>)}
                               </li>
-                        <li> <NavLink to={"/about"}>About Me</NavLink> </li>
+                        <li><button className="button-main-nav"><NavLink to={"/about"}>About Me</NavLink></button>  </li>
                     </ul>
             </div>
             

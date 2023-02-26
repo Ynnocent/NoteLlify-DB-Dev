@@ -36,11 +36,25 @@ body {
     padding: .5rem;
 }
 
+#nav-logo:hover {
+    transform: scale(1.1,1.1);
+    transition: .5s;
+}
+
 #main-nav {
     background-color: var(--color-primary-10);
 }
 
 #main-nav a.active {
+     color: var(--color-grey-10);
+}
+
+.button-main-nav {
+    overflow: hidden;
+}
+
+.button-main-nav:hover {
+    transition: .5s;
     background-color: var(--color-secondary-600);
 }
 
@@ -62,6 +76,16 @@ button a {
     color: var(--color-grey-10);
 }
 
+.logout-btn {
+    background-color: var(--color-secondary-600);
+    color: white;
+}
+
+.logout-btn:hover {
+    background-color: var(--color-secondary-700);
+    transition: .5s;
+}
+
 .modal-backdrop {
     position: fixed;
     top: 0;
@@ -78,6 +102,8 @@ button a {
     border-radius: 10px;
     border: none;
     background-color: var(--color-gray-10);
+    animation: fade-slide-down 0.5s ease-out forwards;
+    
 }
 
 #footer-div{
@@ -100,3 +126,43 @@ button a {
     padding: 1rem;
     list-style: none;
 }
+
+#error-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+
+#error-div {
+    margin-top: 2rem;
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--color-primary-500);
+    width: 20rem;
+}
+
+@keyframes fade-slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(1rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fade-slide-down {
+    from {
+      opacity: 0;
+      transform: translateY(-1rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

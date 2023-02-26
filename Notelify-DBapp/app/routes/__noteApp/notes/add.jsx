@@ -4,6 +4,7 @@ import { useNavigate } from '@remix-run/react';
 import { addNoteData, getNoteData } from "../../../data/notes.server";
 import { redirect } from "@remix-run/node";
 import { requireUserSession } from "../../../data/auth.server";
+import { validateUserInput } from "../../../data/validation.server";
 
 export default function AddPage() {
     const navigate =  useNavigate();
@@ -30,6 +31,12 @@ export async function action({request}) {
     const userId = await requireUserSession(request);
     const formData = await request.formData();
     const noteData = Object.fromEntries(formData);
+
+    try {
+        validateUserInput(noteData);
+    } catch (error) {
+        return error;
+    }
 
     await addNoteData(noteData, userId)
 

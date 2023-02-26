@@ -13,7 +13,7 @@ export default function NotesPage() {
         <section id="notes-page-section">
             <h1>Get started and Add a note!</h1>
             
-            <button>
+            <button id="add-button">
                 <Link to="add">Add Note</Link>
             </button>
         </section>

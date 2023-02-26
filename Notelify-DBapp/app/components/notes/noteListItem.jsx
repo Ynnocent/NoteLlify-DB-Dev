@@ -4,6 +4,7 @@ export default function NoteListItem({title, note, id, date}) {
     function delNoteItemHandler() {
 
     }
+
     return(
         <article className="note-item">
             <div>
@@ -12,7 +13,9 @@ export default function NoteListItem({title, note, id, date}) {
                     <p className="note-item-date">{date.slice(0,10)}</p>
                 </div>
                 <hr/>
-                <h3 className="note-item-content">{note}</h3>
+                <div className="note-item-content" >
+                    {note}
+                    </div>
             </div>
             <menu className="note-item-action">
                 <Form method="delete" action={`/notes/${id}`}>

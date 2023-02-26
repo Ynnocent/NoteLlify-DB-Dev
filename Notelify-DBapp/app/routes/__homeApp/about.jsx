@@ -9,7 +9,21 @@ export default function AboutPage(){
                     <About3dTitle/>
                 </div>
             </div>
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, fugit soluta? Possimus beatae error ea doloribus neque itaque accusamus esse, blanditiis aperiam animi laborum explicabo ad, similique excepturi, expedita soluta adipisci sapiente veniam cum consectetur. Voluptatibus nesciunt ea, placeat sit minus cumque blanditiis eveniet molestiae, eligendi rerum sunt. Ipsum, esse.</h1>
+            <div id="about-paragraphs">
+                <h1>Hi! I hope you're enjoying your time with Notelify! My name
+                    is Ynno Plucena. I am a Software Engineering student at BYU - Idaho.
+                    I am currently a junior. I grew up in Dubai, UAE but was born in the
+                    Philippines. Growing up I have always been a creative person, I loved
+                    the idea of being able to create things. Be that stories, art, or even
+                    apps. I chose to do software engineering for a career because, aside
+                    from being a creative person I also love programming as a whole.
+                </h1>
+
+                <h4>
+                    If you would like to see my resume click this <span id="resume-link"><a href="https://ynnoonlineresume.netlify.app/" target="_blank">link</a></span>
+                </h4>    
+            </div>
+
             
         </div>
         </>

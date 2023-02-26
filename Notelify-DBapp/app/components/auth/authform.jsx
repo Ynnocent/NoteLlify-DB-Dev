@@ -34,7 +34,7 @@ import {FaLock, FaUserPlus} from 'react-icons/fa';
           <input type="password" id="password" name="password" minLength={7} />
         </p>
         {validationErrors && (
-            <ul>
+            <ul style={{listStyle: 'none', textAlign: 'left'}}>
                 {Object.values(validationErrors).map((error) => (
                     <li key={error}>{error}</li>
                 ))}

@@ -1,12 +1,14 @@
 import { prisma } from "./database.server";
 
 export async function addNoteData(noteData, userId) {
-    
+    const submissionDate = new Date().toISOString();
+
     try {
+        console.log(submissionDate)
         return await prisma.note.create({data: {
         title: noteData.title,
         note: noteData.content,
-        date: new Date(noteData.date),
+        date: submissionDate,
         user: {connect: {id: userId}}
     }});
     } catch (error) {
@@ -55,7 +57,7 @@ export async function updateNoteData(id, noteData) {
         }, data: {
             title: noteData.title,
             note: noteData.content,
-            date: new Date(noteData.date)
+            // date: new Date(noteData.date)
         }
     })
     } catch (error) {

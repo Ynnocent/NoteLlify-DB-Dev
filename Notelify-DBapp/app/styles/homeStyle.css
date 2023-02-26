@@ -58,6 +58,31 @@ h3 {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+#about-paragraphs {
+    background-color: var(--color-primary-600);
+    padding: .5rem;
+    text-align: justify;
+    border-radius: .5rem;
+}
+#about-paragraphs a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+#about-paragraphs a:hover {
+    color: var(--color-secondary-700);
+   
+}
+#resume-link:hover {
+    background-color: var(--color-secondary-500);
+    font-size: large;
+    
+    transition: .5s;
+   
+    border-radius: 2rem;
+}
+
 #about-title3d{
     grid-column: 2
 }
@@ -69,6 +94,11 @@ h3 {
     cursor: pointer;
     padding: 0.5rem 1.75rem;
     border-radius: 1rem;
+}
+
+.home-button:hover {
+    background-color: var(--color-secondary-600);
+    transition: .5s;
 }
 
 section {

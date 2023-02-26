@@ -20,6 +20,7 @@ export function loader({request}) {
 export const meta = () => ({
     charset: "utf-8",
     title: "Notelify",
+    description: "A simple note taking app. Collect and manage your notes your own way!",
     viewport: "width=device-width,initial-scale=1",
   });
 

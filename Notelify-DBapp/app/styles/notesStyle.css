@@ -17,7 +17,12 @@ body {
 }
 
 #note-nav a.active {
+    color: var(--color-grey-10);
+}
+
+.logout-btn {
     background-color: var(--color-secondary-600);
+    color: white;
 }
 
 #note-nav a {
@@ -26,22 +31,57 @@ body {
     text-decoration: none;
 }
 
+.note-nav-button:hover {
+    background-color: var(--color-secondary-600);
+    transition: .5s;
+}
+
+.del-btn:hover {
+    background-color: var(--color-secondary-700);
+    transition: .5s;
+}
+
+.edit-btn:hover {
+    background-color: var(--color-primary-200);
+    transition: .5s;
+}
+
+#add-button:hover {
+    background-color: greenyellow;
+    transition: .5s;
+}
 #note-add-form {
     display: flex;
     flex-direction: column;
-    width: 200px;
+    min-width: 200px;
+    max-width: 200rem;
     grid-column: 2;
     padding: 1rem;
 }
 
 #note-add-section {
     background-color: var(--color-primary-600);
-    width: 20rem;
+    min-width: 200px;
+    max-width: none;
     border-radius: 1rem;
     display: grid;
     grid-template-columns: 5% 1fr 5%;
     padding: 1rem;
     justify-items: center;
+}
+
+#content-input {
+    background-color: var(--color-primary-800);
+    border: none;
+    border-radius: .5rem;
+    min-width: 20rem;
+}
+
+.note-item-content{
+    line-height: 1rem;
+    white-space: pre-line;
+    text-align: left;
+    padding-left: 1.5rem;
 }
 
 input {
@@ -77,6 +117,7 @@ button a {
     width: 25rem;
     margin: .5rem;
     padding: .5rem;
+    
 }
 
 .del-btn {
@@ -110,3 +151,26 @@ p.note-item-date{
     color: white;
     margin-top: 30px;
 }
+
+@keyframes fade-slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(1rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fade-slide-down {
+    from {
+      opacity: 0;
+      transform: translateY(-1rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

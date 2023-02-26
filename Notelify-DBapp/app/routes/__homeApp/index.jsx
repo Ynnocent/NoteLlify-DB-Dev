@@ -41,6 +41,9 @@ export default function Index() {
           suggestions or just want to connect with me, please visit the <span id="about-link"><Link to={"/about"}> About Me </Link></span>
           page. To reach my socials! (Also so that you can also know more about me)
         </h4>
+        <h4>A thing to note as well is that the dates that are being shown on the notes are in the UTC timezone. I'm still 
+          currently trying to find a way to set it relative to the user's timezone.
+        </h4>
         </div>
         
         
@@ -48,4 +51,12 @@ export default function Index() {
         
     </>
   );
+}
+
+export function meta() {
+  return{
+    title: "Notelify",
+    description: "A simple note taking app. Collect and manage your notes your own way!",
+    viewport: "width=device-width,initial-scale=1",
+  }
 }

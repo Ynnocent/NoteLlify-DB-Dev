@@ -1,4 +1,5 @@
 import { requireUserSession } from "../../data/auth.server"
+import { getNoteData } from "../../data/notes.server";
 
 export default function QuotesPage() {
     return(
@@ -9,5 +10,8 @@ export default function QuotesPage() {
 }
 
 export async function loader({request}) {
-    await requireUserSession(request);
+    const userId = await requireUserSession(request);
+    const notes = await getNoteData(userId);
+
+    return notes;
 }
